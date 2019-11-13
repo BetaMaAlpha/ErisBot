@@ -1,6 +1,5 @@
 const Eris = require("eris");
-const token = procss.env.token;
-const bot = new Eris(token);
+const bot = new Eris();
 
 bot.on("ready", () => {
     console.log("Ready!");
@@ -14,4 +13,4 @@ bot.on("messageCreate", (msg) => {
     }
 });
 
-bot.connect();
+bot.connect(procss.env.token);
