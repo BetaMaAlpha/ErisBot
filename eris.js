@@ -13,4 +13,4 @@ bot.on("messageCreate", (msg) => {
     }
 });
 
-bot.connect(procss.env.token);
+bot.connect(process.env.token);
